@@ -16,6 +16,9 @@
 #ENTRYPOINT ["java","-jar","/usr/local/lib/SimpleSpringBootWebApp.jar"]
 
 FROM openjdk:8
+
 EXPOSE 8080
+
 ADD /target/simple-webapp-spring-boot-1.0-SNAPSHOT.jar simple-webapp-spring-boot-1.0-SNAPSHOT.jar
+
 ENTRYPOINT ["java","-jar","/simple-webapp-spring-boot-1.0-SNAPSHOT.jar"]
